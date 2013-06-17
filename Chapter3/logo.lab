@@ -1,0 +1,141 @@
+Welcome to Berkeley Logo version 5.6
+? print 2 + 3
+5
+? print 2+3
+5
+? print sum 2 3
+5
+? print (sum 2 3 4 5)
+14
+? print sum 2 3 4 5
+5
+You don't say what to do with 4
+? print sum 2 3 4 5
+5
+You don't say what to do with 4
+? 2+3
+You don't say what to do with 5
+? print print 2
+2
+print didn't output to print
+? print "yesterday
+yesterday
+? print "julia"
+julia"
+? print revolution
+I don't know how  to revolution
+? print [blue jay way]
+blue jay way
+? show [eight days a week]
+[eight days a week]
+? show first [golden slumbers]
+golden
+? print first bf [she loves you]
+loves
+? pr first first bf [yellow submarine]
+s
+? to second :stuff
+> output first bf :stuff
+> end
+second defined
+? second "somthing
+You don't say what to do with o
+? print second "piggies
+i
+? ps second [another girl]
+I don't know how  to ps
+? pr second [another girl]
+girl
+? pr first second [carry that weigth]
+t
+? pr second second [i dig a pony]
+i
+? to pr2nd :thing
+> print first bf :thing
+> end
+pr2nd defined
+? pr2nd [the 1 after 909]
+1
+? print first pr2nd [hey jude]
+jude
+pr2nd didn't output to first
+? repeat 5 [print [this boy]]
+this boy
+this boy
+this boy
+this boy
+this boy
+? if 3 = 1+1 [print [the fool on the hill]]
+? print ifelse 2=1+1
+not enough inputs to ifelse
+? print ifelse 2=1+1 [second [your mother should know]] [first "help]
+mother
+? print ifelse 3=1+2 [strawberry fields forever] [penny lane]
+I don't know how  to fields
+? print ifelse 4=1+2 ["flying] [[all you need is love]]
+all you need is love
+? 
+
+
+? to greet :person
+> say [how are you,]
+> end
+greet defined
+? to say :saying
+> print sentence :saying :person
+> end
+say defined
+? greet "ringo
+how are you, ringo
+? show map [word first ? last ?] [lucy in the sky with diamonds]
+I don't know how  to map
+? show map "first [paperback writer]
+I don't know how  to map
+? to who :sent
+> foreach [pete roger john keith] "describe
+> end
+who defined
+? who [sells out]
+I don't know how  to foreach  in who
+[foreach [pete roger john keith] "describe]
+? print :bass
+bass has no value
+? make "bash "paul
+? print :bash
+paul
+? print bass
+I don't know how  to bass
+? to bass 
+> output [johnny cymball]
+> end
+bass defined
+? print bass
+johnny cymball
+? print :bass
+bass has no value
+? print "bass
+bass
+? to countdown :num
+> if :num=0 [print "blastoff stop]
+> end
+countdown defined
+? to countdown :num
+countdown is already defined
+? to countdown :num
+countdown is already defined
+? to downup :word
+> print :word
+> if emptyp bl :word [stop]
+> downup bl :word
+> print :world
+> end
+downup defined
+? downup "hello
+hello
+hell
+hel
+he
+h
+world has no value  in downup
+[print :world]
+? 

@@ -1,0 +1,10 @@
+data-abstraction barries: a powerful tools for controlling complexity.
+
+		 	  By isolating the underlying representation of data object,
+			  we can divide the task of designing a large program into
+			  smaller tasks that can be performed separetely.
+			  
+			  abstraction barries isolate different design choices from each
+			  other and permit different choices to coexit in a single program
+
+generic procedure: 

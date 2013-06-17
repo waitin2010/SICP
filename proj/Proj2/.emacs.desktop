@@ -1,0 +1,62 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Jun  6 19:35:36 2013
+;; Desktop file format version 206
+;; Emacs version 24.3.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/SICP/proj/Proj2/" "~/SICP/proj/Proj2/adv.scm" "~/SICP/proj/Proj2/exercise.scm" "~/SICP/proj/Proj2/adv-world.scm" "~/SICP/proj/Proj2/adv.scm" "~/SICP/homework/hw4.scm" "~/SICP/proj/Proj2/adv-world.scm" "~/SICP/homework/hw4.scm"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/waitin2010/SICP/proj/Proj2/exercise.scm"
+  "exercise.scm"
+  'scheme-mode
+  nil
+  1095
+  '(992 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/waitin2010/SICP/proj/Proj2/adv-world.scm"
+  "adv-world.scm"
+  'scheme-mode
+  nil
+  1988
+  '(2852 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/waitin2010/SICP/proj/Proj2/adv.scm"
+  "adv.scm"
+  'scheme-mode
+  nil
+  6573
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/waitin2010/SICP/homework/hw4.scm"
+  "hw4.scm"
+  'scheme-mode
+  nil
+  7197
+  '(5199 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-dos)))
+

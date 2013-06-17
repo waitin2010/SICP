@@ -1,0 +1,15 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;Project:    proj2 
+;;;;;;;;Who:        waitin2010
+;;;;;;;;Date:       2013-06-06
+;;;;;;;;Description:
+
+
+(define dormitory (instantiate place 'dormitory))
+
+(define waitin2010 (instantiate person 'waitin2010 dormitory))
+
+(can-go dormitory 'south Soda)
+(ask dormitory 'exits)
+
+

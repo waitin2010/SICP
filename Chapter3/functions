@@ -1,0 +1,4 @@
+set-car!	-take two arguments x and y, return (cons y (cdr x))
+set-cdr!	-take two arguments x and y, return (cons (car x) y)
+append!		-take two arguments x and y, splice them together, modifying the final 
+		-pair of x so that its cdr is now y.

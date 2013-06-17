@@ -1,0 +1,2 @@
+(put <op> <type> <item>)    -installs the <item> in the table, indexed by the <op> <type>.
+(get <op> <type>)           -looks up the <op>,<type> entry in the table and returns the item found there.If no item is found, get return false.

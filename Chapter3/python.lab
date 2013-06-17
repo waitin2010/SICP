@@ -1,0 +1,312 @@
+Python 2.7.3 (default, Aug  1 2012, 05:16:07) 
+[GCC 4.6.3] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2 + 3
+5
+>>> 2.0 + 3
+5.0
+>>> print 3.6/2
+1.8
+>>> import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+>>> "hello, world!"
+'hello, world!'
+>>> "hello,world!"[2]
+'l'
+>>> "hello, world!"[13]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> "hello, world!"[-1]
+'!'
+>>> "hello, world!"[-20]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> "hello, world!"[-2]
+'d'
+>>> print "om"+("nom"*2)
+omnomnom
+>>> print "hello, world"[1:5]
+ello
+>>> x = 37
+>>> print math.sqrt(x)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'math' is not defined
+>>> math.sqart(3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'math' is not defined
+>>> import math
+>>> print math.sqrt(x)
+6.0827625303
+>>> p =1
+>>> q = 1
+>>> while p < 100 :
+... print q
+  File "<stdin>", line 2
+    print q
+        ^
+IndentationError: expected an indented block
+>>> print
+
+>>> print "he
+  File "<stdin>", line 1
+    print "he
+            ^
+SyntaxError: EOL while scanning string literal
+>>> print "hello"
+hello
+>>> print x
+37
+>>> while p<100:
+... print q
+  File "<stdin>", line 2
+    print q
+        ^
+IndentationError: expected an indented block
+>>> while p<100:
+... p+=10
+  File "<stdin>", line 2
+    p+=10
+    ^
+IndentationError: expected an indented block
+>>> while p<100:
+...    print q
+...    temp=p
+...    p = q
+...    q= p+q
+... 
+1
+2
+4
+8
+16
+32
+64
+128
+>>> def greet(who):
+...     print "Hello, "+who
+... 
+>>> greet("john")
+Hello, john
+>>> square = lambda x: x*x
+>>> square(6)
+36
+>>> range(5,13)
+[5, 6, 7, 8, 9, 10, 11, 12]
+>>> (lambda x,y: x**y) (6 4)
+  File "<stdin>", line 1
+    (lambda x,y: x**y) (6 4)
+                          ^
+SyntaxError: invalid syntax
+>>> (lambda x, y: x**y)(6 4)
+  File "<stdin>", line 1
+    (lambda x, y: x**y)(6 4)
+                          ^
+SyntaxError: invalid syntax
+>>> (lambda x: x*x) (4)
+16
+>>> (lambda x, y: x*y) (6,4)
+24
+>>> def divides(a,b):
+...     return b != 0 and a % b ==0
+... 
+>>> divide(123456789,11)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'divide' is not defined
+>>> divides(123456789,11)
+False
+>>> def isEven(n):
+...     if divides(n,2):
+...       return True
+...     return False
+... 
+>>> isEven
+<function isEven at 0x93b009c>
+>>> isEven(2)
+True
+>>> a=4
+>>> while True:
+...     if isEven(a):
+...       print a
+...     if a>10:
+...       break
+...     a = a+1
+... 
+4
+6
+8
+10
+>>> def sumDigits(n):
+...     s = 0
+...     while n> 0:
+...       d = n%10
+...       s = s+d
+...       n = n/10
+...     return s
+... 
+>>> sumDigits(1234)
+10
+>>> range(7)
+[0, 1, 2, 3, 4, 5, 6]
+>>> range(7)[2]
+2
+>>> len("Go west!")
+8
+>>> len(range(0,20,2)
+... )
+10
+>>> range(0,20,2)
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+>>> nums = map(square, range(5,13,2))
+>>> nums
+[25, 49, 81, 121]
+>>> sum = reduce(lambda a,b: a+b, nums)
+>>> print nums
+[25, 49, 81, 121]
+>>> nums.append(13**2)
+>>> nums[-1]
+169
+>>> nums[-1] = 15**2
+>>> nums
+[25, 49, 81, 121, 225]
+>>> sum
+276
+>>> for n in range(-2,20):
+...   print n
+... 
+-2
+-1
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+>>> for letter in "Queen Elizabeth":
+...   print letter
+... 
+Q
+u
+e
+e
+n
+ 
+E
+l
+i
+z
+a
+b
+e
+t
+h
+>>> name = raw_input("what is your name?")
+what is your name?john
+>>> name
+'john'
+>>> print "hello, " + name + "."
+hello, john.
+>>> def primes_to(n):
+...   sieve = range(n+1)
+...   primes = []
+...   sieve[1] = 0
+...   for i in range(len(sieve)):
+...     if sieve[i]!=0: #if
+...     primes.append(i)
+  File "<stdin>", line 7
+    primes.append(i)
+         ^
+IndentationError: expected an indented block
+>>> def primes_to(n):
+...   sieve = range(n+1)
+...   primes = []
+...   sieve[1] = 0
+...   for i in range(len(sieve)):
+...     if sieve[i]!=0: #if
+...       primes.append(i)
+...       for j in range(i*i, len(sieve),i):
+...         sieve[j] = 0
+...   return primes
+... 
+>>> primes = primes_to(100)
+>>> primes
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+>>> def isPrime(n):
+...   if n > primes[-1]:
+...     return "I don't know"
+...   else:
+...     return n in primes
+... 
+>>> isPrime(2)
+True
+>>> isPrime(100)
+"I don't know"
+>>> def isPrime2(n):
+...   if n > primes[-1]:
+...     return "I don't know"
+...   elif n not in primes:
+...     return False
+...   else:
+...     return False
+... 
+>>> isPrime2(5)
+False
+>>> isPrime2(1111)
+"I don't know"
+>>> for s in [i + j for i in "abc" for j in "def"]:
+...     print s
+... 
+ad
+ae
+af
+bd
+be
+bf
+cd
+ce
+cf
+>>> nums = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>> nums
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>> column2 = [row[1] for row in nums]
+>>> print column2
+[2, 5, 8]
+>>> 

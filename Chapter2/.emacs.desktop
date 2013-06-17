@@ -1,0 +1,62 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Apr 25 19:31:24 2013
+;; Desktop file format version 206
+;; Emacs version 23.3.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/SICP/Chapter2/" "~/SICP/Chapter2/hw2.scm" "~/SICP/Chapter2/complex-number2.scm" "~/SICP/Chapter2/complex-number3.scm" "~/" "~/hello.c" "~/head_command" "~/" "~/hello.c"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/waitin2010/SICP/Chapter2/hw2.scm"
+  "hw2.scm"
+  'scheme-mode
+  nil
+  4524
+  '(4451 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/waitin2010/SICP/Chapter2/complex-number3.scm"
+  "complex-number3.scm"
+  'scheme-mode
+  nil
+  2675
+  '(1577 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/waitin2010/SICP/Chapter2/complex-number2.scm"
+  "complex-number2.scm"
+  'scheme-mode
+  nil
+  2311
+  '(2111 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/waitin2010/head_command"
+  "head_command"
+  'fundamental-mode
+  nil
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+

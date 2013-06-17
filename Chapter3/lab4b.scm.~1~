@@ -1,0 +1,23 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;Project:    Week 4B Lab
+;;;;;;;;Who:        waitin2010
+;;;;;;;;Date:       2013-05-24
+;;;;;;;;Description:
+
+
+(define (make-count init-amount)
+  (let ((balance init-amount))
+    (define (withdraw amount)
+      (set! balance (- balance amount)) balance)
+    (define (deposit amount)
+      (set! balance (+ balance amount)) balance)
+    (define (dispatch m)
+      (cond ((eq? m 'withdraw) withdraw)
+	    ((eq? m 'deposit) deposit)))
+    dispatch))
+
+;test for make-count function
+(define c1 (make-count 100))
+
+((c1 'with-draw) 10)
+((c1 'deposit) 10)

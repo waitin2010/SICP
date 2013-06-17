@@ -1,0 +1,111 @@
+;;Name:
+;;Login:
+;;hw4
+
+;;; Scheme OOP
+;;1
+(define-class (random-generator range)
+  (class-vars (acount 0))
+  (initialize (set! acount (+ acount 1)))
+  (method (number) (random range))
+  (method (count) acount))
+
+(define generator1 (instantiate random-generator 5))
+(define generator2 (instantiate random-generator 100))
+(define generator3 (instantiate random-generator 250))
+
+(ask generator1 'number)
+(ask generator2 'number)
+(ask generator1 'count)
+
+
+
+
+;;2
+
+
+
+
+
+;;3
+
+
+
+
+
+;;4
+
+
+
+
+
+
+;;5
+
+
+
+
+
+;;;;Below the Line
+;;1
+;;SICP exercise 3.3 goes here.  Modify the given make-account procedure.
+(define (make-account balance)
+  (define (withdraw amount)
+	(if (>= balance amount)
+    	(begin (set! balance (- balance amount))
+           	balance)
+    	"Insufficient funds"))
+  (define (deposit amount)
+	(set! balance (+ balance amount))
+	balance)
+  (define (dispatch m)
+	(cond ((eq? m 'withdraw) withdraw)
+      	((eq? m 'deposit) deposit)
+      	(else (error "Unknown request -- MAKE-ACCOUNT"
+                   	m))))
+  dispatch)
+
+
+;;For SICP exercise 3.4, copy below your solution from 3.3, and then modify it from here.
+
+
+
+
+
+;;SICP exercise 3.8 goes here
+
+
+
+
+
+;;2
+;;Do not use define-class or OOP-Scheme in your re-definition of ubiquitous
+
+
+
+
+;;;; Short Answer
+#| Your answer goes here
+
+
+
+
+
+
+
+|#
+;;; Section 5: Environment Diagrams
+;;1 is an environment diagram question.  Bring the environment diagram with you to your face-to-face grading session.
+
+;;2 is partially an environment diagram question.  Bring the environment diagram with you to your face-to-face grading session.
+#|Explanation for 10 goes here:
+
+
+
+
+
+|#
+
+;;3 is an environment diagram.  Bring the environment diagram with you to your face-to-face grading session.
+
+;;; Secton 6: Extra for Experts

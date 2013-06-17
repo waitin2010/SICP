@@ -1,0 +1,79 @@
+Welcome to Berkeley Logo version 5.6
+? print 2 + 3
+5
+? print 2+3
+5
+? print sum 2 3
+5
+? print (sum 2 3 4 5)
+14
+? print sum 2 3 4 5
+5
+You don't say what to do with 4
+? print sum 2 3 4 5
+5
+You don't say what to do with 4
+? 2+3
+You don't say what to do with 5
+? print print 2
+2
+print didn't output to print
+? print "yesterday
+yesterday
+? print "julia"
+julia"
+? print revolution
+I don't know how  to revolution
+? print [blue jay way]
+blue jay way
+? show [eight days a week]
+[eight days a week]
+? show first [golden slumbers]
+golden
+? print first bf [she loves you]
+loves
+? pr first first bf [yellow submarine]
+s
+? to second :stuff
+> output first bf :stuff
+> end
+second defined
+? second "somthing
+You don't say what to do with o
+? print second "piggies
+i
+? ps second [another girl]
+I don't know how  to ps
+? pr second [another girl]
+girl
+? pr first second [carry that weigth]
+t
+? pr second second [i dig a pony]
+i
+? to pr2nd :thing
+> print first bf :thing
+> end
+pr2nd defined
+? pr2nd [the 1 after 909]
+1
+? print first pr2nd [hey jude]
+jude
+pr2nd didn't output to first
+? repeat 5 [print [this boy]]
+this boy
+this boy
+this boy
+this boy
+this boy
+? if 3 = 1+1 [print [the fool on the hill]]
+? print ifelse 2=1+1
+not enough inputs to ifelse
+? print ifelse 2=1+1 [second [your mother should know]] [first "help]
+mother
+? print ifelse 3=1+2 [strawberry fields forever] [penny lane]
+I don't know how  to fields
+? print ifelse 4=1+2 ["flying] [[all you need is love]]
+all you need is love
+? 
+
+

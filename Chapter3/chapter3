@@ -1,0 +1,13 @@
+3.2 The Environment Model of Evaluation
+    1. An environment is a sequence of frame. Each frame is a table(possibly empty) of bindings, which associate variable names with their corresponding values.
+       Each frame also has a pointer to its enclosing environment, unless for the purposes of discussion, the frame is considered to be global. 
+       The value of a variable with respect to an environment is the value given by the binding of the variable in the first frame in the environment that contains a binding for that variable.
+       If no frame in the sequence specifies a binding for the variable, then the variable is said to be unbound in the environment.
+
+3.3 Modeling with mutable Data
+   
+   mutators and mutable data object.
+   pairs--basic operation: cons, car, cdr, set-car!, set-cdr!.
+   sharing can be dangerous, since modificaions made to structures will also affect other structures that happen to share the modified parts.
+The mutation operations set-car! and set-cdr! should be used care; unless we have a good understanding of how our data object are share, muation can have unanticipated results.
+    

@@ -1,0 +1,17 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;Project:    Debug for proj2
+;;;;;;;;Who:        waitin2010
+;;;;;;;;Date:       2013-06-13
+;;;;;;;;Description:
+
+(define (name obj) (ask obj 'name))
+(define (inventory obj)
+  (if (person? obj)
+      (map name (ask obj 'possessions))
+      (map name (ask obj 'things))))
+(define (whereis person)
+  (name (ask person 'place)))
+
+(define (owner things)
+  (name (ask things 'possessor)))
+

@@ -1,0 +1,9 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;Project:    proj2 
+;;;;;;;;Who:        waitin2010
+;;;;;;;;Date:       2013-06-06
+;;;;;;;;Description:
+
+
+(define dormitory (instantiate place 'dormitory))
+

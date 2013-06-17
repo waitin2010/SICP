@@ -1,0 +1,17 @@
+(define (same-parity x . y)
+  (define (parity-rec parity list1)
+    (cond ((null? list1) nil)
+	  ((= (remainder (car list1) 2) parity) (cons (car list1)(parity-rec parity (cdr list1))))
+	  (else (parity-rec parity (cdr list1)))))
+  (if (null? y)
+      x
+      (cons x (parity-rec (remainder x 2) y))))
+
+(define (same-parity2 a . n)
+  (define (find type n)
+    (cond ((null? n) nil)
+	  ((type (car n)) (cons (car n) (find type (cdr n))))
+	  (else (find type (cdr n)))))
+  (if (odd? a)
+      (cons a (find odd? n))
+      (cons a (find even? n))))

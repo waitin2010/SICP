@@ -1,0 +1,17 @@
+data-abstraction barries: a powerful tools for controlling complexity.
+
+		 	  By isolating the underlying representation of data object,
+			  we can divide the task of designing a large program into
+			  smaller tasks that can be performed separetely.
+			  
+			  abstraction barries isolate different design choices from each
+			  other and permit different choices to coexit in a single program
+
+generic procedure:        operate on data that may be represented in more than one way.
+
+data-directed programming: a powerful and convenient implementation strategy 
+	      		   for additively assembling systems with generi operations.
+
+dispatching on type: the general strategy of checking the type of a datum and calling 
+	       	     an approciate procedure is called.
+		     

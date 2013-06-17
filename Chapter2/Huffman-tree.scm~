@@ -1,0 +1,22 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;Project:    Huffman encoding tree
+;;;;;;;;Who    :    waitin2010
+;;;;;;;;Date   :    04-16-2013
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;Leaf abstraction
+;;;;Leaf = (tag, symbol, weight)
+
+(define (make-leaf symbol weight)
+  (list 'leaf symbol weight))
+
+(define (leaf? object)
+  (eq? (car object) 'leaf))
+
+(define (symbol-leaf leaf)
+  (cadr leaf))
+
+(define (weight-leaf weight)
+  (caddr leaf))
+

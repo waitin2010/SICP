@@ -1,0 +1,10 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;Project:    week6a
+;;;;;;;;Who:        waitin2010
+;;;;;;;;Date:       2013-06-02
+;;;;;;;;Description:
+
+(define x-protector (make-serializer))
+(define protected-plus-10 (x-protector (lambda () (set! x (+ x 10)))))
+(define protected-plus-20 (x-protector (lambda () (set! x (+ x 20)))))
+(parallel-execute protected-plus-10 protected-plus-20)
